@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('woxsen.jpg');
+      background-size:cover;
+      margin: 0%;
+      background-color: #ebdeaa;
+      padding: 65px;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #e1c36a;
+      padding: 80px;
+      border-radius: 20px;
+      background: rgba(253, 246, 185, 0.644);
+      box-shadow: 0 0 100px hsla(0, 0%, 0%, 0.1);
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="address"]
+  
+    {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #050505;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    input[type="checkbox"] {
+      margin-top: 25px;
+    }
+    input[type="submit"] {
+      background-color:#3b993e;
+      color: rgb(221, 211, 67);
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      width: 100%;
+    }
+    input[type="submit"]:hover {
+      background-color: #318835;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <center><h1>Registration Form</h1></center>
+    <input type="text" id="name"First name="name" placeholder="Your First  Name" required>
+    <input type="text" id="name"Last name="name" placeholder="Your Last  Name" required>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    <input type="tel" id="phone" name="phone" pattern="\+91 [0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="ph.number +91 XXX-XXX-XXXX" required>
+    <input type="address" id="address" name="address" placeholder="Your Address" required>
+    <input type="text" id="username" name="username" placeholder="Create username" required>
+    <input type="password" id="password" name="password" placeholder="Your Password" required>
+    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I accept the terms and conditions</label>
+    <input type="submit" value="Submit">
+    <p>Already have account? <a href="index.html">Login</a></p>
+    <P>Check my CV : <a href="CV.html">My CV</a></P>
+  </form>
+</body>
+</html>
